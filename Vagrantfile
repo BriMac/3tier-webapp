@@ -8,6 +8,8 @@ Vagrant.configure("2") do |config|
     "db01"  => { ip: "10.10.10.20", mem: 2048 }
   }
 
+ config.vm.synced_folder ".", "/vagrant", type: "rsync"
+
   nodes.each do |name, cfg|
     config.vm.define name do |node|
       node.vm.hostname = name
@@ -20,3 +22,4 @@ Vagrant.configure("2") do |config|
     end
   end
 end
+ 
