@@ -1,3 +1,10 @@
+
+## About this project
+
+This is a personal learning project, not production infrastructure. I'm using it to practise DevOps fundamentals, infrastructure as code, containers, reverse proxies, observability, out of interest, and outside of my day job in network security. It's built on a single machine with VMs and runs entirely offline. Expect rough edges, notes-to-self in the docs, and the occasional backtrack as I learn what works, and doesnt work :)
+
+
+
 # 3-Tier Web App
 
 Four-VM lab: Nginx load balancer, dual FastAPI app nodes, PostgreSQL. Debian 12 on libvirt/KVM via Vagrant.
