@@ -16,6 +16,7 @@ Vagrant.configure("2") do |config|
         lv.memory = cfg[:mem]
         lv.cpus = 2
       end
+      node.vm.provision "shell", path: "provision/install-docker.sh"
     end
   end
 end
