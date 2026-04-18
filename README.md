@@ -17,6 +17,13 @@ Four-VM lab: Nginx load balancer, dual FastAPI app nodes, PostgreSQL. Debian 12 
 
     vagrant destroy -f
 
+## Documentation
+
+Detailed write-ups for each milestone live in [`docs/`](docs/):
+
+- [01 — Vagrant scaffolding](docs/01-vagrant-scaffolding.md)
+- [02 — Docker provisioning](docs/02-docker-provisioning.md)
+
 ## Status
 
 - [x] Four Debian 12 VMs on isolated 10.10.10.0/24 network
