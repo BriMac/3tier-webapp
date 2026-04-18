@@ -31,12 +31,12 @@ Detailed write-ups for each milestone live in [`docs/`](docs/):
 - [01 — Vagrant scaffolding](docs/01-vagrant-scaffolding.md)
 - [02 — Docker provisioning](docs/02-docker-provisioning.md)
 - [03 — PostgreSQL on db01](docs/03-postgres.md)
-
+- [04 — FastAPI on app01 and app02](docs/04-fastapi.md)
 
 ## Status
 
 - [x] Four Debian 12 VMs on isolated 10.10.10.0/24 network
 - [x] Docker installed on all nodes
 - [x] PostgreSQL on db01
-- [ ] FastAPI on app01/app02
+- [x] FastAPI on app01/app02
 - [ ] Nginx reverse proxy + load balancing on web01

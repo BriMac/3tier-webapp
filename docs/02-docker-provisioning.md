@@ -4,11 +4,11 @@
 
 Install Docker Engine and the Compose plugin identically on all four VMs, in a way that is reproducible from git. Anyone cloning the repo should be able to run `vagrant up` and end up with a working four-node Docker lab with no manual steps.
 
-## What we built
+## What was built
 
 ### The provisioning script (`provision/install-docker.sh`)
 
-1. **Idempotency check** — `if command -v docker ...` at the top. If Docker is already installed, the script exits immediately. This matters because `vagrant provision` can be run multiple times, and we don't want a full reinstall every run.
+1. **Idempotency check** — `if command -v docker ...` at the top. If Docker is already installed, the script exits immediately. This matters because `vagrant provision` can be run multiple times, and a full reinstall every run is undesirable.
 
 2. **`set -euo pipefail`** — safety line at the top of every decent bash script.
    - `-e` exits on any error

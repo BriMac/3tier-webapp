@@ -4,7 +4,7 @@
 
 Run PostgreSQL 16 as a Docker container on db01, with persistent storage, an initial schema applied on first boot, credentials kept out of git, and the database reachable from the app tier over the 10.10.10.0/24 private network.
 
-## What we built
+## What was built
 
 ### File layout
 
@@ -79,7 +79,7 @@ Should return a count of 2.
 
 **General rule:** Vagrantfile changes to `synced_folder`, networks, or provider config need a `reload` (or a fresh `up --provision`) to take effect. Changes inside provisioners apply on next `vagrant provision`.
 
-**vagrant-libvirt doesn't enable a shared folder by default**, unlike the VirtualBox provider which auto-mounts `/vagrant`. Rsync is one option (one-way, host → VM, manual sync on change). NFS is the other (two-way, live, more setup). Rsync is fine for this project because we only edit files on the host, never on the guests.
+**vagrant-libvirt doesn't enable a shared folder by default**, unlike the VirtualBox provider which auto-mounts `/vagrant`. Rsync is one option (one-way, host → VM, manual sync on change). NFS is the other (two-way, live, more setup). Rsync is fine for this project because files are only edited on the host, never on the guests.
 
 **`$PGPASSWORD` env var** is the clean way to pass a Postgres password to non-interactive `psql`. Otherwise `psql` prompts, which breaks in scripts and `docker run` commands.
 
