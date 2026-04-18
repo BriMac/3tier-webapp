@@ -8,7 +8,9 @@ Vagrant.configure("2") do |config|
     "db01"  => { ip: "10.10.10.20", mem: 2048 }
   }
 
- config.vm.synced_folder ".", "/vagrant", type: "rsync"
+config.vm.synced_folder ".", "/vagrant", type: "rsync",
+  rsync__exclude: [".vagrant/", ".git/"],
+  rsync__args: ["--verbose", "--archive", "--delete", "-z"]
 
   nodes.each do |name, cfg|
     config.vm.define name do |node|
