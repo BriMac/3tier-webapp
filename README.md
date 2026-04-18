@@ -37,6 +37,6 @@ Detailed write-ups for each milestone live in [`docs/`](docs/):
 
 - [x] Four Debian 12 VMs on isolated 10.10.10.0/24 network
 - [x] Docker installed on all nodes
-- [x ] PostgreSQL on db01
+- [x] PostgreSQL on db01
 - [ ] FastAPI on app01/app02
 - [ ] Nginx reverse proxy + load balancing on web01
