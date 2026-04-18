@@ -20,7 +20,7 @@ Four-VM lab: Nginx load balancer, dual FastAPI app nodes, PostgreSQL. Debian 12 
 ## Status
 
 - [x] Four Debian 12 VMs on isolated 10.10.10.0/24 network
-- [ ] Docker installed on all nodes
+- [x] Docker installed on all nodes
 - [ ] PostgreSQL on db01
 - [ ] FastAPI on app01/app02
 - [ ] Nginx reverse proxy + load balancing on web01
